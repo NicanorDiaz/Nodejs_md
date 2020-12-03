@@ -73,12 +73,15 @@ http.createServer(function(request, response) {
 ~~~
 const http = require('http');
 
-function iniciar(){
-	http.createServer(function(request, response) {
-  	response.writeHead(200, {"Content-Type": "text/html"});
-  	response.write("Hola Mundo");
-  	response.end();
-	}).listen(8888);
+function iniciar() {
+  function onRequest(request, response) {
+    response.writeHead(200, {"Content-Type": "text/html"});
+    response.write("Hola Mundo");
+    response.end();
+  }
+
+  http.createServer(onRequest).listen(8888);
+  console.log("Servidor Iniciado.");
 }
 
 exports.iniciar = iniciar;
