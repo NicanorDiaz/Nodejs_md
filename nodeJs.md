@@ -27,13 +27,13 @@ conole.log('chau');
 
 ___
 
-## Instalacion
+## Instalación
 1. Abre tu navegador y dirjete a la pagina oficial de [node js](https://nodejs.org/es/ ).
 2. Aparecerán dos botones, es mejor elejir la opcion [recomendado para la mayoría](https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi)
 3.Se descargará el instalador y lo unico que tiene que hacer es seguir los pasos del instalador.
 
 ## Crear un Proyecto
-### La idea es crear una aplicacion que tenga dos rutas: Una para hacer un input de texto y otra ruta que reciba los datos
+### La idea es crear una aplicación que tenga dos rutas: Una para hacer un input de texto y otra ruta que reciba los datos
 1. El primer paso es crear una carpeta donde pondra los archivos para la creacion del proyecto.
 2. Cree un archivo llamado `server.js`.
 3. Abra el archivo con cualquier editor de texto.
@@ -86,7 +86,7 @@ function iniciar() {
 
 exports.iniciar = iniciar;
 ~~~
->Escribimos exports para poder utilizar la funcion iniciar en el archivo **index.js**
+>Escribimos exports para poder utilizar la funcion iniciar en el archivo **index.js** y utilizamos desde onRequest() hasta http.createServer().
 
 10. El archivo **index.js** quedaría:
 ~~~
